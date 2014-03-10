@@ -1,7 +1,7 @@
 var Element=(function(){
 	
-	function Element(){
-		this._element = document.createElement("DIV");
+	function Element(element){
+		this._element = element?element:document.createElement("DIV");
 	};
 	
 

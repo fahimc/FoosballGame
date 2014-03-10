@@ -1,6 +1,7 @@
 var GameView=(function(){
 	
-	function GameView(){};
+	function GameView(){
+	};
 	
 	ClassUtil.extend(GameView,View);
 	
