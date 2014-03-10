@@ -4,8 +4,8 @@ var MainModel=(function(){
 		this._currentView ="";
 	};
 	
-	ClassUtil.extend(MainModel,EventDispatcher);
-	ClassUtil.implement(MainModel,Model);
+	
+	ClassUtil.extend(MainModel,Model);
 	
 	var prototype=
 	{

@@ -1,7 +1,7 @@
 {
-  "name": "App",
-  "version": "1.0.12",
-  "description": "Test App",
+  "name": "FoosballGame",
+  "version": "1.0.1",
+  "description": "Foosball Game",
   "main": "server.js",
   "readmeFilename": "README.md",
   "devDependencies": {

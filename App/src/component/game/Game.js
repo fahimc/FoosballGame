@@ -2,6 +2,7 @@ var Game = (function(){
 	
 	function Game(){};
 	
+	ClassUtil.extend(Game,Element);
 	
 	Game.prototype=
 	{

@@ -4,6 +4,8 @@ var Model=(function(){
 		this.data ={};
 	};
 	
+	ClassUtil.extend(Model,EventDispatcher);
+	
 	Model.prototype=
 	{
 		data:null,
