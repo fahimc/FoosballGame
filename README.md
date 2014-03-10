@@ -1,4 +1,4 @@
-#Foosball Game
+##About
 
 This Game contains the following:  
 
@@ -29,3 +29,7 @@ or
 ```
 grunt as
 ```
+
+#Architecture
+
+![diagram](https://raw.github.com/fahimc/FoosballGame/master/docs/image/diagram.jpeg)
