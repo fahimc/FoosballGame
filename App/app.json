@@ -1,0 +1,9 @@
+{  
+  "name": "TestApp",  
+  "displayName": "TestApp",  
+  "version" : "1.0.0",  
+  "description" : "This is a Test App",  
+  "defaultPlatform" : "NodeJS",
+  "type": "WebApp",
+  "defaultPage": "index.html"
+}
