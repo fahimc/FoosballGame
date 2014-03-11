@@ -1,7 +1,7 @@
 var Element=(function(){
 	
 	function Element(element){
-		this._element = element?element:document.createElement("DIV");
+		this._construct(element);
 	};
 	
 
@@ -11,8 +11,12 @@ var Element=(function(){
 	
 	var prototype=
 	{
+		_element:null,
+		_construct:function(element){
+			this._element = element;
+		},
 		getElement:function(){
-			return this._element;
+			return this._element?this._element:this._element=document.createElement("DIV");
 		}
 	};
 	
