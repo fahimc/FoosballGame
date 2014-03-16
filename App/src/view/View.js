@@ -13,6 +13,9 @@ var View=(function(){
 		},
 		hide:function(){
 			
+		},
+		resize:function(){
+			
 		}
 	};
 	ClassUtil.proto(View,prototype);

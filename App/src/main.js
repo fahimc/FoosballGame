@@ -4,6 +4,7 @@
 	}
 
 	function onLoad() {
+		
 		Localise.langList=['de-de','ar-eg'];
 		Localise.addEventListener('complete', onLocalised);
 		Localise.load(DataModel);
@@ -26,7 +27,9 @@
 		viewController.init();
 	}
 		
-
+	function onResize(){
+		
+	}
 	window.onLangChange = function(lang) {
 		Localise.load(DataModel, lang, true);
 

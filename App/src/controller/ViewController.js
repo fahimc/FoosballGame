@@ -10,6 +10,8 @@ var ViewController = (function() {
 		_currentView : null,
 		_views : [],
 		init : function() {
+			window.addEventListener('resize', this.onResize.bind(this));
+			
 			var viewName = this.model.getCurrentView();
 			var currentView = this.model.getViewByName(viewName);
 			this.hideView(currentView);
@@ -36,6 +38,9 @@ var ViewController = (function() {
 		},
 		setModel : function(model) {
 			this.model = model;
+		},
+		onResize:function(){
+			if(this.currentView)this.currentView.resize();
 		}
 	};
 	

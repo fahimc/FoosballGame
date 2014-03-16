@@ -14,6 +14,7 @@ html, body {
 	background-color: #111212;
 	color: #a6a6a6;
 	font-family: "Cabin Medium", cabinmedium, cabin, sans-serif;
+	overflow: hidden;
 }
 /* GameView
  *
@@ -36,12 +37,20 @@ html, body {
 	background-color: #005A31;
 	left: 10%;
 	top: 10%;
+	overflow: hidden;
 }
 .Rod {
 	position: absolute;
-	height: 120%;
-	width: 2%;
-	background-color: #ccc;
+	height: 100%;
+	width: 1%;
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#d6d6d6), color-stop(45%,#bababa), color-stop(100%,#d8d8d8)); /* Chrome,Safari4+ */
+	top: 0;
+}
+.Rod .holder
+{
+	position: absolute;
+	height: 100%;
+	width:100%;
 	top: 0;
 }
 .Player {
@@ -66,10 +75,10 @@ html, body {
 	top: 45%;
 }
 .Player.defender1 {
-	top: 25%;
+	top: 34.7%;
 }
 .Player.defender2 {
-	top: 75%;
+	top: 65.2%;
 }
 .Player.midfielder1 {
 	top: 10%;
@@ -94,4 +103,12 @@ html, body {
 }
 .Player.striker3 {
 	top: 75%;
+}
+.Ball
+{
+	position:absolute;
+	background-color:#fff;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px; 
 }

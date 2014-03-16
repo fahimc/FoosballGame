@@ -14,9 +14,14 @@ var GameView=(function(){
 			this._game.setStyle();
 			this._game.arrange();
 			this.getElement().appendChild(this._game.getElement());
+			
+			this._game.start();
 		},
 		setStyle:function(){
 			this.getElement().className = "GameView";
+		},
+		resize:function(){
+			this._game.resize();
 		}
 	};
 	

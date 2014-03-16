@@ -4,8 +4,16 @@ var FoosballPlayer=(function(){
 	
 	ClassUtil.extend(FoosballPlayer,Element);	
 	
+	
+	FoosballPlayer.STATE=
+	{
+		KICKING:"KICKING",
+		LIFTED:"LIFTED"
+	};
+	
 	var prototype=
 	{
+		state:"",
 		color:"",
 		build:function(){
 			
@@ -15,9 +23,11 @@ var FoosballPlayer=(function(){
 			this.getElement().classList.add(this.color);
 		},
 		kick:function(){
+			this.state = FoosballPlayer.STATE.KICKING;
 			this.getElement().classList.add("kick");
 		},
 		stopKick:function(){
+			this.state="";
 			this.getElement().classList.remove("kick");
 		}
 	};

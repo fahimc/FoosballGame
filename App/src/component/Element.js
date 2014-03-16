@@ -17,6 +17,12 @@ var Element=(function(){
 		},
 		getElement:function(){
 			return this._element?this._element:this._element=document.createElement("DIV");
+		},
+		getY : function(node) {
+			return Number(node?node:this.getElement().style.top.replace("px", ""));
+		},
+		getX : function(node) {
+			return Number(node?node:this.getElement().style.left.replace("px", ""));
 		}
 	};
 	

@@ -24,6 +24,12 @@ var Game = (function(){
 		},
 		setStyle:function(){
 			this.getElement().className = "Game";
+		},
+		start:function(){
+			this._table.start();
+		},
+		resize:function(){
+			this._table.resize();
 		}
 	};
 	
